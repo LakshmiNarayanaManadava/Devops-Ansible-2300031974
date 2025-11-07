@@ -56,10 +56,10 @@ export default function TaskDashboard() {
       if (editingTask) {
         await TaskService.updateTask(editingTask.id, form);
         setEditingTask(null);
-        setSuccess("✅ Task updated successfully!");
+        setSuccess("✅ Task updated Successfully!");
       } else {
         await TaskService.createTask(form);
-        setSuccess("✅ Task added successfully!");
+        setSuccess("✅ Task added Successfully!");
       }
 
       // Reset form and reload data
